@@ -1,10 +1,14 @@
-package Lab02;
+package Lab02;  //Nguyễn Văn Nam - 20215097
 
 public class DigitalVideoDisc {
 //thuộc tính 
 	private String title;
 	private String category;
 	private String director;
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
 	private int length;
 	private float cost;
 	

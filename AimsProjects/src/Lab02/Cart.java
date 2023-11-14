@@ -1,4 +1,4 @@
-package Lab02;
+package Lab02; //Nguyễn Văn Nam 20215097
 
 public class Cart {
 	public static final int MAX_NUMBERS_ORDERED = 20;
@@ -21,6 +21,17 @@ public class Cart {
 		else {
 			System.out.println("Giỏ hàng gần đầy."); // Thông báo nếu giỏ hàng đã đầy
 		}
+	}
+	// Overloaded method 1
+	public void addDigitalVideoDisc (DigitalVideoDisc [] dvdList) { 
+		for (DigitalVideoDisc dvd :dvdList) { 
+			addDigitalVideoDisc (dvd);
+		}
+	}
+	// Overloaded method 2
+	public void addDigitalVideoDisc (DigitalVideoDisc dvdl, DigitalVideoDisc dvd2) { 
+		addDigitalVideoDisc (dvdl); 
+		addDigitalVideoDisc (dvd2);
 	}
 	
 	public void removeDigitalVideoDisc(DigitalVideoDisc disc) {

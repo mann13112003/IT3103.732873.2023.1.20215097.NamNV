@@ -1,4 +1,4 @@
-package Lab02;
+package Lab02;  //Nguyễn Văn Nam - 20215097
 
 public class Aims {
 
