@@ -67,6 +67,8 @@ public class DigitalVideoDisc {
       this.cost = cost;
       this.id = ++nbDigitalVideoDisc;
   }
+  
+  //
   public String toString() 
 	{
 		String dvd;
@@ -74,6 +76,11 @@ public class DigitalVideoDisc {
 		return dvd;
 	}
   
+  //
+  public boolean isMatch(String title)
+	{  
+  	return this.title.equalsIgnoreCase(title);
+	}
 
 }   //Nguyễn Văn Nam - 20215097
 

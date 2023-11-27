@@ -19,5 +19,13 @@ public class CartTest {
 		//Test the print method
 		cart.print();
 		
+		cart.showCart();
+		System.out.println("\n*************************************************\n");
+		cart.searchById(1);
+		cart.searchById(3);
+		cart.searchByTitle("Star Wars");
+		cart.searchByTitle("The Lion King");
+		cart.searchByTitle("Aladin");
+		
 	}
 }

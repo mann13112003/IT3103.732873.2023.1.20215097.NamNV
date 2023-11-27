@@ -72,7 +72,7 @@ public class Cart {
    }
 	
 	// in danh sách các mặt hàng đã đặt trong giỏ hàng, giá từng mặt hàng và tổng giá
-		public void print()
+	public void print()
 	    {   
 	        int i = 1;
 	        System.out.println("**********************CART**********************");
@@ -85,6 +85,42 @@ public class Cart {
 	        System.out.println(totalCost());
 	        System.out.println("*************************************************");
 	    }
+	// Search method
+	// 1) search by Title
+	public void searchByTitle(String Title)
+		    { 
+		        int count = 1;
+		        for (DigitalVideoDisc disc : itemsOrdered) {
+		        	if (disc != null) {
+		        		if (disc.isMatch(Title))
+		                {
+		        			System.out.println(count++ + ".DVD -" + disc.toString());
+		                }       
+		        	}
+		        }
+		        if (count == 1)
+		        {   
+		            System.out.println("No results found");
+		        }
+		    }
+	// 2) search by ID
+	public void searchById(int Id)
+		    {   
+		    	int count = 1;
+		    	for (DigitalVideoDisc disc : itemsOrdered) {
+		    		if (disc != null) {
+		    			if (Id == disc.getId())
+		    			{
+		    				System.out.println(count++ + ".DVD -" + disc.toString());
+		    				break;
+		    			}
+		    		}
+		    	}
+		        if (count == 1)
+		        {   
+		        	System.out.println("No results found");
+		        }    
+		    }
 		
 	
 
