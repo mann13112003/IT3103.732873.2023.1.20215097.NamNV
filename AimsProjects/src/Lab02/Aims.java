@@ -16,6 +16,34 @@ public class Aims {
     	anOrder.removeDigitalVideoDisc(dvd1);
     	System.out.println("Total Cost is: "); 
     	System.out.println(anOrder.totalCost());
+    	
+    	System.out.println("\nTesting removeDigitalVideoDisc method");
+	    //remove dvd3 
+	    anOrder.removeDigitalVideoDisc(dvd3);
+	    //show cart
+	    anOrder.showCart();
+    	
+    	// Tạo danh sách DVDS
+    	DigitalVideoDisc[] dvdList = new DigitalVideoDisc[4];
+    	dvdList[0]=dvd1;
+    	dvdList[1]=dvd2;
+    	dvdList[2]=dvd3;
+    	dvdList[3]=dvd2;
+    	 	
+    	//Kiểm tra Overloaded method addDigitalVideoDisc
+    	//Phương thức thêm danh sách DVDS 	
+    	
+    	System.out.println("\nKiểm tra phương thức chồng thêm danh sách DVD:");
+    	anOrder.showCart();							//show cart
+    	anOrder.addDigitalVideoDisc(dvdList);		//add DVDs
+    	anOrder.showCart();							//show cart
+    	
+    	//method add two DVDs
+    	System.out.println("\nKiểm tra phương thức chồng thêm 2 DVD:");
+    	anOrder.addDigitalVideoDisc(dvd3,dvd1);		//add DVDs
+    	anOrder.showCart();							//show cart
 	}
+
+	
 
 }//Nguyễn Văn Nam - 20215097

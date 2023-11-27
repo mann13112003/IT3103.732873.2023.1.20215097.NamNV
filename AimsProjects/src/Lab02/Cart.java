@@ -52,6 +52,17 @@ public class Cart {
 
 	}
 	
+	//Hiển thị các DVDS trong giỏ hàng
+	public void showCart ()
+	{   
+		System.out.println("  Giỏ hàng hiện có:");
+		int i = 1;
+		for (DigitalVideoDisc disc : itemsOrdered) {
+			if (disc != null) {
+				System.out.println(i++ + " " + disc.getTitle() + " " + disc.getCost());
+			}
+        }
+	}
 	public float totalCost() {
       float total = 0; // Khởi tạo tổng chi phí
       for (int i = 0; i < qtyOrdered; i++) { // Duyệt qua từng đĩa trong giỏ hàng
