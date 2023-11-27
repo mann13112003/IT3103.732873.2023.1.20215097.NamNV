@@ -11,8 +11,10 @@ public class DigitalVideoDisc {
 
 	private int length;
 	private float cost;
+	private int id;
+	private static int nbDigitalVideoDisc = 0;
 	
-//Các phương thức getter cho các thuộc tính
+	//Các phương thức getter cho các thuộc tính
 	public String getTitle() {
 		return title;
 	}
@@ -28,6 +30,9 @@ public class DigitalVideoDisc {
 	public float getCost() {
 		return cost;
 	}
+	public int getId() {
+		return id;
+	}
 	
 //Constructor
 	// Phương thức khởi tạo dựa trên tiêu đề
@@ -40,6 +45,7 @@ public class DigitalVideoDisc {
       this.category = category;
       this.title = title;
       this.cost = cost;
+      this.id = ++nbDigitalVideoDisc;
   }
 
   // Phương thức khởi tạo dựa trên đạo diễn, danh mục, tiêu đề và chi phí
@@ -48,6 +54,7 @@ public class DigitalVideoDisc {
       this.category = category;
       this.title = title;
       this.cost = cost;
+      this.id = ++nbDigitalVideoDisc;
   }
 
   // Phương thức khởi tạo dựa trên tất cả các thuộc tính: tiêu đề, danh mục, đạo diễn,
@@ -58,6 +65,7 @@ public class DigitalVideoDisc {
       this.director = director;
       this.length = length;
       this.cost = cost;
+      this.id = ++nbDigitalVideoDisc;
   }
 
 }   //Nguyễn Văn Nam - 20215097

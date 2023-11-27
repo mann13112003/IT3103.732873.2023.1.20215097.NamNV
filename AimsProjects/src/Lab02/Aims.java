@@ -42,7 +42,16 @@ public class Aims {
     	System.out.println("\nKiểm tra phương thức chồng thêm 2 DVD:");
     	anOrder.addDigitalVideoDisc(dvd3,dvd1);		//add DVDs
     	anOrder.showCart();							//show cart
+    	
+    	
+    	// Kiểm tra việc cấp phát id cho các DVDS
+    	System.out.println("dvd 1 id: " + dvd1.getId());
+        System.out.println("dvd 3 id: " + dvd3.getId());
 	}
+	
+	
+	
+	
 
 	
 

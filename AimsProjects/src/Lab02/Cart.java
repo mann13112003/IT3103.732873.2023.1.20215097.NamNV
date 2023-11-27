@@ -69,5 +69,7 @@ public class Cart {
           total += itemsOrdered[i].getCost(); // Cộng thêm chi phí của từng đĩa vào tổng
       }
       return total; // Trả về tổng chi phí của giỏ hàng
-  }
+   }
+	
+	
 }//Nguyễn Văn Nam - 20215097
