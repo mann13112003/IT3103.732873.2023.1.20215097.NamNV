@@ -71,5 +71,21 @@ public class Cart {
       return total; // Trả về tổng chi phí của giỏ hàng
    }
 	
+	// in danh sách các mặt hàng đã đặt trong giỏ hàng, giá từng mặt hàng và tổng giá
+		public void print()
+	    {   
+	        int i = 1;
+	        System.out.println("**********************CART**********************");
+	        for (DigitalVideoDisc disc : itemsOrdered) {
+	        	if (disc != null) {
+	        		System.out.println(i++ + ".DVD - " + disc.toString());
+	        	}
+	        }
+	        System.out.print("Total Cost: ");
+	        System.out.println(totalCost());
+	        System.out.println("*************************************************");
+	    }
+		
 	
+
 }//Nguyễn Văn Nam - 20215097
