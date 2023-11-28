@@ -1,4 +1,7 @@
-package Lab02;  //Nguyễn Văn Nam - 20215097
+package hust.soict.dsai.aims;  //Nguyễn Văn Nam - 20215097
+
+import hust.soict.dsai.aims.cart.Cart;
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
 public class Aims {
 
@@ -20,10 +23,11 @@ public class Aims {
     	System.out.println("\nTesting removeDigitalVideoDisc method");
 	    //remove dvd3 
 	    anOrder.removeDigitalVideoDisc(dvd3);
+	    
 	    //show cart
 	    anOrder.showCart();
     	
-    	// Tạo danh sách DVDS
+    	// Tạo danh sách DVDS  //Nguyễn Văn Nam - 20215097
     	DigitalVideoDisc[] dvdList = new DigitalVideoDisc[4];
     	dvdList[0]=dvd1;
     	dvdList[1]=dvd2;
@@ -44,7 +48,7 @@ public class Aims {
     	anOrder.showCart();							//show cart
     	
     	
-    	// Kiểm tra việc cấp phát id cho các DVDS
+    	// Kiểm tra việc cấp phát id cho các DVDS //Nguyễn Văn Nam - 20215097
     	System.out.println("dvd 1 id: " + dvd1.getId());
         System.out.println("dvd 3 id: " + dvd3.getId());
 	}

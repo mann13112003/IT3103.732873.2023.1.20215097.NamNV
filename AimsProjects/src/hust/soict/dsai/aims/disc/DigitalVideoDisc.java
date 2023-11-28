@@ -1,4 +1,4 @@
-package Lab02;  //Nguyễn Văn Nam - 20215097
+package hust.soict.dsai.aims.disc;  //Nguyễn Văn Nam - 20215097
 
 public class DigitalVideoDisc {
 //thuộc tính 
@@ -77,7 +77,7 @@ public class DigitalVideoDisc {
 	}
   
   //
-  public boolean isMatch(String title)
+  public boolean isMatch(String title)  //Nguyễn Văn Nam 
 	{  
   	return this.title.equalsIgnoreCase(title);
 	}

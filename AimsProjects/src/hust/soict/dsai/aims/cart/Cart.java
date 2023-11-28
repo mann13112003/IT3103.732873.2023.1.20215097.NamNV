@@ -1,4 +1,6 @@
-package Lab02; //Nguyễn Văn Nam 20215097
+package hust.soict.dsai.aims.cart; //Nguyễn Văn Nam 20215097
+
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
 public class Cart {
 	public static final int MAX_NUMBERS_ORDERED = 20;
@@ -22,7 +24,7 @@ public class Cart {
 			System.out.println("Giỏ hàng gần đầy."); // Thông báo nếu giỏ hàng đã đầy
 		}
 	}
-	// Overloaded method 1
+	// Overloaded method 1  //Nguyễn Văn Nam - 20215097
 	public void addDigitalVideoDisc (DigitalVideoDisc [] dvdList) { 
 		for (DigitalVideoDisc dvd :dvdList) { 
 			addDigitalVideoDisc (dvd);
@@ -72,7 +74,7 @@ public class Cart {
    }
 	
 	// in danh sách các mặt hàng đã đặt trong giỏ hàng, giá từng mặt hàng và tổng giá
-	public void print()
+	public void print() //Nguyễn Văn Nam - 20215097
 	    {   
 	        int i = 1;
 	        System.out.println("**********************CART**********************");
@@ -121,7 +123,4 @@ public class Cart {
 		        	System.out.println("No results found");
 		        }    
 		    }
-		
-	
-
 }//Nguyễn Văn Nam - 20215097
