@@ -1,7 +1,7 @@
 package hust.soict.dsai.test.cart; // Nguyễn Văn Nam - 20215097
 
 import hust.soict.dsai.aims.cart.Cart;
-import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
 
 public class CartTest {
 	public static void main(String[] args)
