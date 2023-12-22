@@ -1,4 +1,4 @@
-package hust.soict.hedspi.aims.screen.view;
+package hust.soict.hedspi.aims.screen.view;//Nguyễn Văn Nam - 20215097
 
 import java.awt.Dimension;
 import java.io.IOException;

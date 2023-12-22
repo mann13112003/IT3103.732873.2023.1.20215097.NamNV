@@ -1,4 +1,4 @@
-package hust.soict.hedspi.aims.screen;
+package hust.soict.hedspi.aims.screen;  //Nguyễn Văn Nam -20215097
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
